@@ -4,11 +4,11 @@
   "description": "This is the main repository for Bartender source code.",
   "main": "index.html",
   "scripts": {
-    "e2e-local": "./node_modules/protractor/bin/protractor features/cucumber_conf.js"
+    "e2e-local": "./node_modules/protractor/bin/protractor features/cucumber_conf.js",
   },
   "repository": {
     "type": "git",
-    "url": "git+https://djom202@github.com/bartender.git"
+    "url": "git+https://github.com/djom20/bartender.git"
   },
   "author": "Ing. Jonathan Olier <djom202@gmail.com>",
   "license": "ISC",
