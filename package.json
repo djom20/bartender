@@ -1,0 +1,36 @@
+{
+  "name": "Bartender",
+  "version": "1.0.0",
+  "description": "This is the main repository for Bartender source code.",
+  "main": "index.html",
+  "scripts": {
+    "e2e-local": "./node_modules/protractor/bin/protractor features/cucumber_conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://djom202@github.com/bartender.git"
+  },
+  "author": "Ing. Jonathan Olier <djom202@gmail.com>",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "moment": "^2.13.0"
+  },
+  "devDependencies": {
+    "brfs": "latest",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "cucumber": "^1.0.0",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chai-as-promised": "^0.1.2",
+    "karma-sinon": "^1.0.4",
+    "karma-sinon-chai": "^1.2.0",
+    "mocha": "^2.4.5",
+    "protractor": "^3.3.0",
+    "protractor-cucumber-framework": "^0.6.0",
+    "selenium-webdriver": "^2.53.1",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  }
+}
