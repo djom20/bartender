@@ -5,6 +5,9 @@ body {
     font-weight: bold;
     color: #5e5e5e;
 }
+.colorWhite {
+    color: #fff;
+}
 nav {
     background-color: $redColor;
 }
@@ -80,8 +83,10 @@ nav .brand-logo.alignToCenter {
     padding-left: 26px !important;
 }
 .btn-floating.btn-large {
-    float: right;
     margin-right: 30px;
+    position: absolute;
+    right: 6px;
+    bottom: 10px;
 }
 .no-items {
     margin-top: 30px;

@@ -67,17 +67,31 @@
 </div>
 <!-- items -->
 
-<a class="btn-floating btn-large waves-effect waves-light bgRedColor modal-trigger" href="#modal1">
+<a ng-click="initValues(); openModal('#modal1');" class="btn-floating btn-large waves-effect waves-light bgRedColor">
     <i class="material-icons">add</i>
 </a>
 
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <h4>Adds Orders</h4>
+        <div class="input-field row">
+            <select ng-model="drinkId" class="browser-default">
+                <option value="1" data-icon="assets/images/beer.png" class="left circle" selected>Beer</option>
+                <option value="2" data-icon="assets/images/coffee.png" class="left circle">Coffee</option>
+                <option value="3" data-icon="assets/images/expresso.png" class="left circle">Expresso</option>
+                <option value="4" data-icon="assets/images/juice.png" class="left circle">Juice</option>
+                <option value="5" data-icon="assets/images/martini.png" class="left circle">Martini</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input ng-model="amount" max="10" min="0" value="1" type="number" class="validate">
+                <label class="active" for="first_name2">Amount</label>
+            </div>
+        </div>
     </div>
     <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a ng-click="addOrder();" class="modal-action waves-effect bgRedColor btn-flat colorWhite">Agree</a>
     </div>
 </div>
