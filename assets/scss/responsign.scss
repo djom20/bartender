@@ -1,0 +1,123 @@
+$redColor: #cf0011;
+$bodyBgColor: #f2f5ec;
+body {
+    background-color: $bodyBgColor;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+nav {
+    background-color: $redColor;
+}
+nav .brand-logo.alignToCenter {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 122px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 50%;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.header {
+    border-bottom: 2px solid $redColor;
+    margin-top: 40px;
+}
+.bgRedColor,
+.bgRedColor:hover {
+    background-color: $redColor;
+}
+.redColor {
+    color: $redColor;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.textDrinks {
+    padding-top: 15px;
+    position: relative;
+    display: inherit;
+}
+.withoutMargin {
+    margin: 0;
+}
+.pr-x30 {
+    padding-right: 0 !important;
+}
+.pr-x40 {
+    padding-right: 0 !important;
+}
+.pt-x16 {
+    padding-top: 16px !important;
+}
+.pr-x85 {
+    padding-right: 85px !important;
+}
+.pl-x55 {
+    padding-left: 55px !important;
+}
+.pr-x73 {
+    padding-right: 73px !important;
+}
+.items {
+    border-bottom: 1px dashed;
+}
+.results .row {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.total {
+    padding-left: 80px !important;
+}
+.total2 {
+    padding-left: 26px !important;
+}
+.btn-floating.btn-large {
+    float: right;
+    margin-right: 30px;
+}
+.no-items {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.no-items span {
+    color: #b7b7b7;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.no-items h3 {
+    color: #868686;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+@media screen and ('max-width':768px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .withoutMargin .image {
+        margin-left: 0 !important;
+        width: 50% !important;
+    }
+    .withoutMargin .text {
+        width: 50% !important;
+        padding-left: 25px;
+    }
+    .pr-x30 {
+        padding-right: 30px !important;
+    }
+    .pr-x40 {
+        padding-right: 40px !important;
+    }
+    .pl-x55 {
+        padding-left: 0 !important;
+    }
+}

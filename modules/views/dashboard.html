@@ -1,0 +1,83 @@
+<!-- Menu -->
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo alignToCenter">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+    </div>
+</nav>
+<!-- Menu -->
+
+<!-- items -->
+<div class="content">
+    <div class="wrapper">
+        <div class="header row">
+            <div class="col s4 text-center mb-20">
+                My Drinks
+            </div>
+            <div class="col s4 text-center mb-20">
+                Order
+            </div>
+            <div class="col s4 text-center mb-20">
+                Price
+            </div>
+        </div>
+        <div class="items row" ng-repeat="ord in orders">
+            <div class="col s4 text-center">
+                <div class="row withoutMargin">
+                    <div class="col s3 offset-s3 image icon">
+                        <div ng-switch="ord.name">
+                            <img ng-switch-when="Beer" src="assets/images/beer.png" alt="">
+                            <img ng-switch-when="Juice" src="assets/images/juice.png" alt="">
+                            <img ng-switch-when="Expresso" src="assets/images/expresso.png" alt="">
+                            <img ng-switch-when="Martini" src="assets/images/martini.png" alt="">
+                            <img ng-switch-when="Coffee" src="assets/images/coffee.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col s6 text">
+                        <span class="textDrinks">{{ ord.name }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 text-center pt-x16">
+                <span class="redColor">X</span> <span class="text">{{ ord.count }}</span>
+            </div>
+            <div class="col s4 text-right pt-x16 pr-x40 pr-x85">
+                <span class="redColor">$</span> <span class="text">{{ ord.price }}</span>
+            </div>
+        </div>
+        <div class="no-items text-center" ng-if="orders.length == 0">
+            <span>No drinks, no orders, no price</span>
+            <h3>C’mon dude, have some fun!</h3>
+        </div>
+        <div class="results">
+            <div class="row">
+                <div class="col s4 pl-x55">
+                    Total
+                </div>
+                <div class="col s4">
+                    &nbsp;
+                </div>
+                <div class="col s4 text-right total2 pr-x30 pr-x73">
+                    <span class="redColor">$</span> <span class="text setTotal">{{ sumTotal() }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- items -->
+
+<a class="btn-floating btn-large waves-effect waves-light bgRedColor modal-trigger" href="#modal1">
+    <i class="material-icons">add</i>
+</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+</div>
